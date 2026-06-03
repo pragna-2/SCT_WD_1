@@ -1,0 +1,282 @@
+
+
+h1, h2, h3{
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+h1:hover{
+    color: #ff9800;
+    transform: scale(1.08);
+    text-shadow: 0 0 15px rgba(255,152,0,0.6);
+}
+
+h2:hover{
+    color: #00bcd4;
+    transform: scale(1.08);
+    text-shadow: 0 0 15px rgba(0,188,212,0.6);
+}
+
+h3:hover{
+    color: #4caf50;
+    transform: scale(1.08);
+    text-shadow: 0 0 15px rgba(76,175,80,0.6);
+}
+
+/* ===== Paragraph Hover Effect ===== */
+
+p{
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+p:hover{
+    color: #e91e63;
+    transform: scale(1.02);
+}
+
+/* ===== Card Hover Effect ===== */
+
+.card{
+    background:#f4f4f4;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    background:#003366;
+    color:white;
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Gallery Image Hover ===== */
+
+.gallery img{
+    width:300px;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== Navbar Links Hover ===== */
+
+#navbar ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+#navbar ul li a:hover{
+    color:yellow;
+   
+    border-bottom:2px solid yellow;
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#navbar ul li{
+    display: inline-block;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* ===== Logo Hover ===== */
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.logo:hover{
+    color:orange;
+    transform:scale(1.1);
+}
+
+/* ===== Book Now Button ===== */
+.btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#ff5722;
+    transform:scale(1.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+form input, form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+form input:focus, form textarea:focus {
+  border-color: #ff4b2b;
+  outline: none;
+}
+form button {
+  background-color: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Created By Yash kumar Banjare...   */
+form button:hover {
+  background-color: #ff7b66;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+line-height:1.6;
+}
+
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:#f4f4f4;
+padding:20px;
+width:250px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:300px;
+border-radius:10px;
+}
+
+#navbar{
+position:fixed;
+width:100%;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+background:transparent;
+transition:.4s;
+}
+
+#navbar.scrolled{
+background:#003366;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+@media(max-width:768px){
+.cards{
+flex-direction:column;
+align-items:center;
+}
+}
+.offer-card{
+    border:3px solid orange;
+    position:relative;
+}
+
+.offer-card{
+    border:3px solid orange;
+    transition:0.3s; 
+}
+
+.offer-card h4{
+    color:green;
+    font-size:24px;
+}
+
+.offer-card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.countdown{
+    margin-top:40px;
+    font-size:24px;
+    font-weight:bold;
+}
